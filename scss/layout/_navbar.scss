@@ -1,0 +1,14 @@
+.nav-link {
+    color: $colorNavbaryFooterLetras;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    &:hover {
+        color: red
+    }
+}
+
+.navbar-toggler {
+    border-style: solid;
+    border-color: white;
+    margin-left: 5px;
+}
