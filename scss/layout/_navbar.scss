@@ -3,12 +3,18 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     &:hover {
-        color: red
+        color: $colorHover
     }
 }
 
 .navbar-toggler {
     border-style: solid;
-    border-color: white;
+    border-color: $colorNavbaryFooterLetras;
+    margin-left: 5px;
+}
+
+.logo {
+    border-style: solid;
+    border-color: $colorNavbaryFooterLetras;
     margin-left: 5px;
 }

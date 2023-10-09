@@ -1,6 +1,5 @@
 @import "./base/reset";
 @import "./abstracts/variables";
-@import "./layout/header";
 @import "./layout/navbar";
 @import "./layout/footer";
 
@@ -22,7 +21,7 @@ main {
     padding: 50px;
 
     h1 {
-        color: rgb(168, 45, 45);
+        color: $colorh1;
         text-align: center;
         padding-bottom: 30px;
         font-size: 50px;
@@ -31,7 +30,7 @@ main {
     }
 
     h2 {
-        color: rgb(44, 21, 12);
+        color: $colorh2;
         font-style: oblique;
         text-align: center;
     }
@@ -46,7 +45,7 @@ main {
     }
 
     p {
-        color: rgb(20, 20, 19);
+        color: $colorParrafo;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         line-height: 30px;
     }
