@@ -1,17 +1,3 @@
-@import "./base/reset";
-@import "./abstracts/variables";
-@import "./layout/navbar";
-@import "./layout/footer";
-@import "./pages/contact";
-
-body {
-    background: #5e8a91;
-    background: -webkit-linear-gradient(to right, #455b5f, #4CA1AF);
-    background: linear-gradient(to right, #C4E0E5, #455b5f);
-    overflow-x: hidden;
-}
-
-/* Main*/
 main {
     padding: 50px;
 

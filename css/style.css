@@ -33,11 +33,6 @@ footer .row {
   margin-left: 1px;
 }
 
-/*formulario*/
-.formulario {
-  text-align: center;
-}
-
 body {
   background: #5e8a91;
   background: -webkit-linear-gradient(to right, #455b5f, #4CA1AF);
@@ -45,7 +40,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Main*/
+/*formulario*/
+.formulario {
+  text-align: center;
+}
+
 main {
   padding: 50px;
 }
