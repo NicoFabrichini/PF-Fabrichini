@@ -12,6 +12,8 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!---link css-->
   <link rel="stylesheet" href="../css/style.css">
+  <!--link aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--favicon-->
   <link rel="icon" href="../imag/logo-negro.png">
   <title>CONTACTO</title>
@@ -29,7 +31,7 @@
 
       <!-- logo -->
       <a class="navbar-brand" href="../index.html">
-        <img class= "logo" src="../imag/logo-negro.png" width="50" height="50" alt="logo">
+        <img class="logo" src="../imag/logo-negro.png" width="50" height="50" alt="logo">
       </a>
 
       <!-- enlaces -->
@@ -60,53 +62,58 @@
 
   <main>
     <section class="formulario">
-      <h2>Envianos tu Consulta!!!</h2>
-      <form action="">
-        <fieldset>
-          <legend>Datos de Contacto</legend>
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text">
+      <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+        <h2>¡¡¡Envianos tu Consulta!!!</h2>
+      </div>
+      <div data-aos="fade-right" data-aos-offset="470" data-aos-easing="ease-in-sine">
+
+        <form action="">
+          <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text">
+            <br><br>
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text">
+            <br><br>
+            <label for="E-mail">E-mail</label>
+            <input id="E-mail" type="email">
+            <br><br>
+            <label for="estado">Estado Civil</label>
+            <select name="" id="estado">
+              <option value="">Soltero/a</option>
+              <option value="">Casado/a</option>
+              <option value="">Divorciado/a</option>
+              <option value="">Viudo/a</option>
+            </select>
+          </fieldset>
           <br><br>
-          <label for="apellido">Apellido</label>
-          <input id="apellido" type="text">
+          <label for="novedades">Deseo recibir novedades</label>
+          <input id="novedades" type="checkbox">
           <br><br>
-          <label for="E-mail">E-mail</label>
-          <input id="E-mail" type="email">
+          <h3>Seleccione el tema de interes</h3>
+
+          <label for="contable">Contable</label>
+          <input id="contable" type="radio" name="materia" value="contable">
+
+          <label for="impositivo">Impositivo</label>
+          <input id="impositivo" type="radio" name="materia" value="impositivo">
+
+          <label for="laboral">Laboral</label>
+          <input id="laboral" type="radio" name="materia" value="laboral">
+
+          <label for="previsional">Previsional</label>
+          <input id="previsional" type="radio" name="materia" value="previsional">
           <br><br>
-          <label for="estado">Estado Civil</label>
-          <select name="" id="estado">
-            <option value="">Soltero/a</option>
-            <option value="">Casado/a</option>
-            <option value="">Divorciado/a</option>
-            <option value="">Viudo/a</option>
-          </select>
-        </fieldset>
-        <br><br>
-        <label for="novedades">Deseo recibir novedades</label>
-        <input id="novedades" type="checkbox">
-        <br><br>
-        <h3>Seleccione el tema de interes</h3>
+          <label for="consulta">Ingrese su consulta</label>
+          <br><br>
+          <textarea placeholder="Comentarios.." id="consulta" cols="30" rows="10"></textarea>
+          <br><br>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpiar">
 
-        <label for="contable">Contable</label>
-        <input id="contable" type="radio" name="materia" value="contable">
-
-        <label for="impositivo">Impositivo</label>
-        <input id="impositivo" type="radio" name="materia" value="impositivo">
-
-        <label for="laboral">Laboral</label>
-        <input id="laboral" type="radio" name="materia" value="laboral">
-
-        <label for="previsional">Previsional</label>
-        <input id="previsional" type="radio" name="materia" value="previsional">
-        <br><br>
-        <label for="consulta">Ingrese su consulta</label>
-        <br><br>
-        <textarea placeholder="Comentarios.." id="consulta" cols="30" rows="10"></textarea>
-        <br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-
-      </form>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -164,10 +171,14 @@
       </div>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <!--link java aos-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
