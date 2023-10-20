@@ -28,6 +28,7 @@
 footer {
   background-color: black;
   color: rgb(243, 236, 236);
+  text-align: center;
 }
 footer .row {
   margin-left: 1px;
