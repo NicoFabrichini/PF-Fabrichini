@@ -24,6 +24,11 @@
   margin-left: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  .navbar-nav {
+    margin-left: 20px;
+  }
+}
 /* Footer*/
 footer {
   background-color: black;
